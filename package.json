@@ -1,6 +1,6 @@
 {
   "name": "react-constants",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple solution for generating Flux/React app constants",
   "main": "react_constants.js",
   "scripts": {
