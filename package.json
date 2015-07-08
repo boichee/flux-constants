@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/boichee/react-constants/issues"
   },
-  "homepage": "https://github.com/boichee/react-constants#readme"
+  "homepage": "https://github.com/boichee/react-constants#readme",
+  "devDependencies": {
+    "colors": "^1.1.2"
+  }
 }

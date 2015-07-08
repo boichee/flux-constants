@@ -6,7 +6,7 @@ var usageErrors = {
 var createFluxConstants = function (constants) {
 	if(!(constants instanceof Array)) throw usageErrors.PARAM_TYPE;
 
-	var obj;
+	var obj = {};
 	constants.forEach(function(constant) {
 		if('string' !== typeof constant) throw usageErrors.CONSTANT_VALUE;
 		obj[constant] = constant;
