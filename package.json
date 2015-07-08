@@ -1,0 +1,19 @@
+{
+  "name": "react-constants",
+  "version": "0.0.0",
+  "description": "A simple solution for generating Flux/React app constants",
+  "main": "react_constants.js",
+  "scripts": {
+    "test": "NODE_ENV=test node ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boichee/react-constants.git"
+  },
+  "author": "Brett Levenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boichee/react-constants/issues"
+  },
+  "homepage": "https://github.com/boichee/react-constants#readme"
+}
