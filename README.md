@@ -1,5 +1,24 @@
 ## React/Flux Constants
 
+A bit 'o sugar for those looking to quickly create Flux style constants.
+
+### Installation:
+
+Two options:
+
+#### Option 1: npm
+
+```
+npm install --save react-constants
+```
+
+#### Option 2: clone
+
+```
+git clone https://github.com/boichee/flux-constants
+```
+
+
 Having used React for a while and seen many files that look like this:
 
 ```js
@@ -7,18 +26,20 @@ Having used React for a while and seen many files that look like this:
 var keyMirror = require('key-mirror');
 
 module.exports = keyMirror({
-    "SOME_CONSTANT": null,
-    "ANOTHER_CONSTANT": null
-    })
+  "SOME_CONSTANT": null,
+  "ANOTHER_CONSTANT": null
+});
 ```
 
-I decided to create an alternative that takes an array of strings and thus, requires less typing:
+I decided I hated having to type null over and over again for no reason.
+
+So, I created this module as an alternative. Now you can do:
 
 ```js
 // ComponentConstants.js
 module.exports = require('react-constants')([
-    "SOME_CONSTANT",
-    "ANOTHER_CONSTANT"
+  "SOME_CONSTANT",
+  "ANOTHER_CONSTANT"
 ]);
 ```
 
@@ -28,13 +49,32 @@ A JS object that looks like this:
 
 ### Usage:
 
-To use this module, create your `Constant` modules in the Flux style, (as above), and then just require those modules (in the CommonJS style). Like this:
+First, create your Flux Constants file:
 
+`SomeFluxConstants.js`
+```js
+module.exports = require('react-constants')([
+  'MY_FIRST_CONSTANT',
+  'MY_SECOND_CONSTANT'
+]);
+```
+
+Then use the constants like this:
+
+`SomeFluxActionCreator.js`
 ```js
 var ComponentConstants = require('../constants/ComponentConstants')
 
-console.log(ComponentConstants);
-// => { SOME_CONSTANT: "SOME_CONSTANT", ANOTHER_CONSTANT: "ANOTHER_CONSTANT" }
+var FluxActions = {
+  doSomethingFluxLike: function(data) {
+    var action = {
+      type: ComponentConstants.MY_FIRST_CONSTANT,
+      data: data
+    };
+    
+    AtlasDispatcher.handleAction(action);
+  }
+};
 ```
 
 Enjoy!
