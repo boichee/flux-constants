@@ -1,8 +1,8 @@
 {
-  "name": "react-constants",
+  "name": "flux-constants",
   "version": "0.2.0",
   "description": "A simple solution for generating Flux/React app constants",
-  "main": "react_constants.js",
+  "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test mocha"
   },
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/boichee/flux-constants.git"
   },
-  "author": "Brett Levenson",
-  "license": "ISC",
+  "author": "Brett Hunter Levenson Levenson",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/boichee/flux-constants/issues"
   },

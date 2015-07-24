@@ -9,7 +9,7 @@ Two options:
 #### Option 1: npm
 
 ```
-npm install --save react-constants
+npm install --save flux-constants
 ```
 
 #### Option 2: clone
@@ -19,7 +19,7 @@ git clone https://github.com/boichee/flux-constants
 ```
 
 
-Having used React for a while and seen many files that look like this:
+Having used React + Flux and typed this far too many times:
 
 ```js
 // ComponentConstants.js
@@ -37,7 +37,7 @@ So, I created this module as an alternative. Now you can do:
 
 ```js
 // ComponentConstants.js
-module.exports = require('react-constants')([
+module.exports = require('flux-constants')([
   "SOME_CONSTANT",
   "ANOTHER_CONSTANT"
 ]);
@@ -53,7 +53,7 @@ First, create your Flux Constants file:
 
 `SomeFluxConstants.js`
 ```js
-module.exports = require('react-constants')([
+module.exports = require('flux-constants')([
   'MY_FIRST_CONSTANT',
   'MY_SECOND_CONSTANT'
 ]);
