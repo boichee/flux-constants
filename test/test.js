@@ -3,7 +3,7 @@
  */
 
 var should = require('chai').should();
-var FluxConstantGenerator = require('../flux_constants');
+var FluxConstantGenerator = require('../');
 
 var expected_result_default = {CONSTANT_ONE: 'CONSTANT_ONE', CONSTANT_TWO: 'CONSTANT_TWO'};
 var expected_result_compact = {CONSTANT_ONE: 0, CONSTANT_TWO: 1};

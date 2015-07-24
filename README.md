@@ -1,5 +1,11 @@
 ## React/Flux Constants
 
+## NOTE
+
+If you installed this package using `npm install react-constants` please be aware that this package has been renamed to `flux-constants` and should instead be installed with `npm install flux-constants` if you want the latest version and updates over time.
+
+### So what is this thing?
+
 A bit 'o sugar for those looking to quickly create Flux style constants.
 
 ### Installation:
